@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+h1.maintitle {
+    margin-top: 140px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.formulacalculators {
+    background-color: rebeccapurple;
+    height: 1500px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-column: 250px 250px;
+    grid-row: auto;
+    grid-template-areas:
+        "heron ambiguous"
+        "newton polynomial";
+    column-gap: 100px;
+    row-gap: 200px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.heron {
+    background-color: white;
+    border-radius: 5px;
+    grid-area: heron;
+}
+
+.ambiguous {
+    background-color: rgb(240, 240, 240);
+    grid-area: ambiguous;
+    border-radius: 5px;
+}
+
+.newton {
+    background-color: rgb(240, 240, 240);
+    grid-area: newton;
+    border-radius: 5px;
+}
+
+.polynomial {
+    background-color: rgb(240, 240, 240);
+    grid-area: polynomial;
+    border-radius: 5px;
+}
