@@ -1,11 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(243, 243, 243);
 }
 
 h1.maintitle {
-    margin-top: 140px;
+    margin-top: 60px;
+    margin-bottom: 0%;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
@@ -17,9 +18,8 @@ h2 {
 }
 
 .formulacalculators {
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     height: 1500px;
-    margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
@@ -37,23 +37,40 @@ h2 {
 .heron {
     background-color: white;
     border-radius: 5px;
+    height: 500px;
+    width: 300px;
     grid-area: heron;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.inheron {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+input[type="submit"] {
+    font-size: x-large;
+    color: white;
+    background-color: rgb(18, 49, 228);
 }
 
 .ambiguous {
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     grid-area: ambiguous;
     border-radius: 5px;
 }
 
 .newton {
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     grid-area: newton;
     border-radius: 5px;
 }
 
 .polynomial {
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     grid-area: polynomial;
     border-radius: 5px;
 }
