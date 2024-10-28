@@ -18,28 +18,55 @@
         <div class="heron">
             <h2>Heron's Formula</h2>
             <label for="sidea" class="inheron">Side A:</label>
-            <input type="text" name="sidea" id="sidea" class="inheron"><br><br>
+            <input type="number" name="sidea" id="sidea" class="inheron"><br><br>
             <label for="sideb" class="inheron">Side B:</label>
-            <input type="text" name="sideb" id="sideb" class="inheron"><br><br>
+            <input type="number" name="sideb" id="sideb" class="inheron"><br><br>
             <label for="sidec" class="inheron">Side C:</label>
-            <input type="text" name="sidec" id="sidec" class="inheron"><br><br>
+            <input type="number" name="sidec" id="sidec" class="inheron"><br><br>
 
-            <label for="heroncalc" class="inheron">Area:</label>
-            <textarea readonly name="area" id="heroncalc" cols="20" rows="1" class="inheron"></textarea><br><br>
-
-            <input type="submit" value="Calculate" id="heroncalcbutton"  class="inheron">
+            <label for="trianglearea" class="inheron">Area (Results):</label>
+            <textarea readonly id="trianglearea" cols="20" rows="1" class="inheron"></textarea><br><br>
+            <input type="submit" value="Calculate" id="heroncalcbutton" class="inheron">
         </div>
 
         <div class="ambiguous">
-            <h1>Ambiguous Case</h2>
+            <h2>Ambiguous Case</h2>
+            <label for="anglea" class="inambiguous">Angle A:</label>
+            <input type="number" name="anglea" id="anglea" class="inambiguous"><br><br>
+            <label for="sidea" class="inambiguous">Side A:</label>
+            <input type="number" name="sidea" id="sidea" class="inambiguous"><br><br>
+            <label for="sideb" class="inambiguous">Side B:</label>
+            <input type="number" name="sideb" id="sideb" class="inambiguous"><br><br>
+
+            <label for="triangletype" class="inambiguous">Triangle Type (Results):</label>
+            <textarea readonly id="triangletype" cols="20" rows="1" class="inambiguous"></textarea><br><br>
+            <input type="submit" value="Calculate" id="ambiguouscalcbutton" class="inambiguous">
         </div>
 
         <div class="newton">
             <h2>Newton's Method</h2>
+            <label for="rootguess" class="innewton">Root Guess:</label>
+            <input type="number" name="rootguess" id="rootguess" class="innewton">
+
+            <label for="rootaprox" class="innewton">Root Approximation (Results):</label>
+            <textarea readonly id="rootaprox" cols="20" rows="1" class="innewton"></textarea>
+            <input type="submit" value="Calculate" id="newtoncalcbutton" class="innewton">
         </div>
 
         <div class="polynomial">
             <h2>Polynomial Function</h2>
+            <label for="coefficents" class="inpolynomial">Coefficents:</label>
+            <input type="text" name="coefficents" id="coefficent" class="inpolynomial"><br><br>
+            <label for="exponents" class="inpolynomial">Exponents:</label>
+            <input type="text" name="exponents" id="exponents" class="inpolynomial"><br><br>
+            <label for="xvalues" class="inpolynomial">x Values:</label>
+            <input type="number" name="xvaules" id="xvaules" class="inpolynomial"><br><br>
+
+            <label for="polynomialfunction" class="inpolynomial">Polynomial Function (Results):</label>
+            <textarea readonly id="polynomialfunction" class="inpolynomial" cols="20" rows="1"></textarea>
+            <label for="polynomialevaluation" class="inpolynomial">Polynomial Evaluation (Results):</label>
+            <textarea readonly id="polynomialevaluation" class="inpolynomial" cols="20" rows="1"></textarea>
+            <input type="submit" value="Calculate" id="polynomialcalcbutton" class="inpolynomial">
         </div>
 
     </div>
