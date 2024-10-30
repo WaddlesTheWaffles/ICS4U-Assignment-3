@@ -1,4 +1,4 @@
-let test = ambiguouscase(30, 10, 16) //test
+let test = ambiguouscase(30, 6, 10) //test
 console.log(test);
 
 function heronformula(sideA, sideB, sideC) {
@@ -10,7 +10,35 @@ function heronformula(sideA, sideB, sideC) {
 
 function ambiguouscase(angleADegree, sideA, sideB) {
 
-angleARadian = angleADegree * Math.PI/180;
+    height = sideB * Math.sin(angleADegree * Math.PI / 180);
 
-return angleARadian;
+    if (angleADegree <= 90) {
+        if (sideA < height) {
+            return "No Triangle";
+        }
+        else if (sideA == height) {
+            return "Right Triangle"
+        }
+        else if (sideA > sideB) {
+            return "One Triangle"
+        }
+        else if (sideA > height && sideA < sideB) {
+            return "Two Triangle"
+        }
+        else {
+            return "ERROR"
+        }
+    }
+    else if (angleADegree > 90) {
+        if (sideA <= sideB) {
+            return "No Triangle";
+        }
+        else if (sideA > sideB) {
+            return "One Triangle";
+        }
+        else {
+            return "Error";
+        }
+    }
+
 }
