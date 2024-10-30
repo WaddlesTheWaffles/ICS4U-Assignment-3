@@ -1,10 +1,16 @@
-
-let test = heronformula(2, 3, 4) //test
+let test = ambiguouscase(30, 10, 16) //test
 console.log(test);
 
-function heronformula(sidea, sideb, sidec) {
+function heronformula(sideA, sideB, sideC) {
 
-    area = 0.25 * (Math.sqrt((4 * (Math.pow(sidea, 2)) * (Math.pow(sideb, 2))) - (Math.pow(((Math.pow(sidea, 2)) + (Math.pow(sideb, 2)) - (Math.pow(sidec, 2))), 2))));
-    //If side a is => b+c than it doesn't work
+    area = 0.25 * Math.sqrt(4 * Math.pow(sideA, 2) * Math.pow(sideB, 2) - Math.pow(Math.pow(sideA, 2) + Math.pow(sideB, 2) - Math.pow(sideC, 2), 2));
+
     return area;
+}
+
+function ambiguouscase(angleADegree, sideA, sideB) {
+
+angleARadian = angleADegree * Math.PI/180;
+
+return angleARadian;
 }
