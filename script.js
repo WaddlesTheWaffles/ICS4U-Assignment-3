@@ -1,5 +1,5 @@
-let test = ambiguouscase(30, 6, 10) //test
-console.log(test);
+let test = newtonmethod() //for testing
+
 
 function heronformula(sideA, sideB, sideC) {
 
@@ -41,4 +41,44 @@ function ambiguouscase(angleADegree, sideA, sideB) {
         }
     }
 
+}
+
+function newtonmethod() {
+
+}
+
+function polynomialfunction(coefficentsAsStr, exponentsAsStr, xValueAsStr) {
+
+    let coefficents = coefficentsAsStr.split(" ");
+    let exponents = exponentsAsStr.split(" ");
+
+    let polynomialFunction = "f(x) = ";
+
+    for (i = 0; i < coefficents.length; i++) {
+        let tempValue = parseFloat(coefficents[i]);
+
+        if (tempValue < 0) {
+            polynomialFunction += coefficents[i] + "x^" + exponents[i];
+        }
+        else if (i != 0) {
+            polynomialFunction += "+" + coefficents[i] + "x^" + exponents[i];
+        }
+        else {
+            polynomialFunction += coefficents[i] + "x^" + exponents[i];
+        }
+    }
+
+    let xValue = parseFloat(xValueAsStr);
+    let yValue = 0;
+
+    for (i = 0; i < coefficents.length; i++) {
+        let tempValue = parseFloat(coefficents[i]);
+
+        yValue += parseFloat(coefficents[i]) * Math.pow(xValue, parseFloat(exponents[i]));
+
+    }
+
+    let functionXCaculated = "f(" + xValue + ") = " + yValue;
+
+    return [polynomialFunction, functionXCaculated]
 }
