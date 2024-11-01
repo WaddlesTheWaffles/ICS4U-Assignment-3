@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,11 +19,11 @@
         <div class="heron">
             <h2>Heron's Formula</h2>
             <label for="sidea" class="inheron">Side A:</label>
-            <input type="number" name="sidea" id="sidea" class="inheron"><br><br>
+            <input type="text" name="sidea" id="sideah" class="inheron"><br><br>
             <label for="sideb" class="inheron">Side B:</label>
-            <input type="number" name="sideb" id="sideb" class="inheron"><br><br>
+            <input type="text" name="sideb" id="sidebh" class="inheron"><br><br>
             <label for="sidec" class="inheron">Side C:</label>
-            <input type="number" name="sidec" id="sidec" class="inheron"><br><br>
+            <input type="text" name="sidec" id="sidech" class="inheron"><br><br>
 
             <label for="trianglearea" class="inheron">Area (Results):</label>
             <textarea readonly id="trianglearea" cols="20" rows="1" class="inheron"></textarea><br><br>
@@ -32,11 +33,11 @@
         <div class="ambiguous">
             <h2>Ambiguous Case</h2>
             <label for="anglea" class="inambiguous">Angle A:</label>
-            <input type="number" name="anglea" id="anglea" class="inambiguous"><br><br>
+            <input type="text" name="anglea" id="anglea" class="inambiguous"><br><br>
             <label for="sidea" class="inambiguous">Side A:</label>
-            <input type="number" name="sidea" id="sidea" class="inambiguous"><br><br>
+            <input type="text" name="sidea" id="sideaam" class="inambiguous"><br><br>
             <label for="sideb" class="inambiguous">Side B:</label>
-            <input type="number" name="sideb" id="sideb" class="inambiguous"><br><br>
+            <input type="text" name="sideb" id="sidebam" class="inambiguous"><br><br>
 
             <label for="triangletype" class="inambiguous">Triangle Type (Results):</label>
             <textarea readonly id="triangletype" cols="20" rows="1" class="inambiguous"></textarea><br><br>
@@ -46,7 +47,7 @@
         <div class="newton">
             <h2>Newton's Method</h2>
             <label for="rootguess" class="innewton">Root Guess:</label>
-            <input type="number" name="rootguess" id="rootguess" class="innewton">
+            <input type="text" name="rootguess" id="rootguess" class="innewton">
 
             <label for="rootaprox" class="innewton">Root Approximation (Results):</label>
             <textarea readonly id="rootaprox" cols="20" rows="1" class="innewton"></textarea>
@@ -56,20 +57,21 @@
         <div class="polynomial">
             <h2>Polynomial Function</h2>
             <label for="coefficents" class="inpolynomial">Coefficents:</label>
-            <input type="text" name="coefficents" id="coefficent" class="inpolynomial"><br><br>
+            <input type="text" name="coefficents" id="coefficents" class="inpolynomial"><br><br>
             <label for="exponents" class="inpolynomial">Exponents:</label>
             <input type="text" name="exponents" id="exponents" class="inpolynomial"><br><br>
             <label for="xvalue" class="inpolynomial">x Value:</label>
-            <input type="number" name="xvaule" id="xvaule" class="inpolynomial"><br><br>
+            <input type="text" name="xvalue" id="xvalue" class="inpolynomial"><br><br>
 
             <label for="polynomialfunction" class="inpolynomial">Polynomial Function (Results):</label>
-            <textarea readonly id="polynomialfunction" class="inpolynomial" cols="20" rows="1"></textarea>
+            <textarea readonly id="polynomialfunction" class="inpolynomial" cols="20" rows="2"></textarea>
             <label for="polynomialevaluation" class="inpolynomial">Polynomial Evaluation (Results):</label>
-            <textarea readonly id="polynomialevaluation" class="inpolynomial" cols="20" rows="1"></textarea>
+            <textarea readonly id="polynomialevaluation" class="inpolynomial" cols="20" rows="2"></textarea>
             <input type="submit" value="Calculate" id="polynomialcalcbutton" class="inpolynomial">
         </div>
 
     </div>
+    <script src = "script.js"></script>
 </body>
 
 </html>
